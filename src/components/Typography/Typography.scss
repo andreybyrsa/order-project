@@ -1,0 +1,19 @@
+@mixin typography($fs: 16px, $fw: 400, $lh: 16px) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+.typography {
+  &-regular-16-400-16 {
+    @include typography($fs: 16px, $fw: 400, $lh: 16px);
+  }
+  &-regular-16-700-16 {
+    @include typography($fs: 16px, $fw: 700, $lh: 16px);
+  }
+  &-regular-16-400-24 {
+    @include typography($fs: 16px, $fw: 400, $lh: 24px);
+  }
+  &-logo {
+    @include typography($fs: 20px, $fw: 900, $lh: 24.38px);
+  }
+}
