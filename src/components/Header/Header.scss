@@ -1,0 +1,47 @@
+.header {
+  width: 100%;
+  padding: 53px 0;
+
+  &-content__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    padding-right: 27px;
+  }
+
+  &__icon:last-child {
+    padding-right: 0;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+      padding-right: 130px;
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-link {
+      padding-right: 44px;
+    }
+    &-link:last-child {
+      padding-right: 0;
+    }
+  }
+}
