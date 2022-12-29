@@ -26,7 +26,12 @@ function Footer({
         >
           {`0${page}`}
         </Typography>
-        /
+        <Typography
+          variant={TypographyVariantsTypes.Regular_16_400_16}
+          color="#ffffff"
+        >
+          /
+        </Typography>
         {completedNumber === 100 ?
           <Typography
             variant={TypographyVariantsTypes.Regular_16_400_16}

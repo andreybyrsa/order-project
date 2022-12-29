@@ -29,10 +29,10 @@ function Header({
         <div className="header__navigation">
           <div className="header__navigation-logo">
             <Typography
-              variant={TypographyVariantsTypes.Logo}
+              variant={TypographyVariantsTypes.Heading_logo}
               color="#ffffff"
             >
-              IT Clan
+              IT CLAN
             </Typography>
           </div>
           <div className="header__navigation-links">
