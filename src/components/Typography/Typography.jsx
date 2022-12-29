@@ -34,7 +34,7 @@ function Typography({
 Typography.defaultProps = {
   className: '',
   children: null,
-  color: '#A1A1A1',
+  color: '#ffffff',
 };
 
 Typography.propTypes = {

@@ -22,27 +22,23 @@ function Footer({
       <div className="footer__content-progress">
         <Typography
           variant={TypographyVariantsTypes.Regular_16_400_16}
-          color="#ffffff"
         >
           {`0${page}`}
         </Typography>
         <Typography
           variant={TypographyVariantsTypes.Regular_16_400_16}
-          color="#ffffff"
         >
           /
         </Typography>
         {completedNumber === 100 ?
           <Typography
             variant={TypographyVariantsTypes.Regular_16_400_16}
-            color="#ffffff"
           >
             Прокрути вниз
           </Typography>
         :
           <Typography
             variant={TypographyVariantsTypes.Regular_16_400_16}
-            color="#ffffff"
           >
             Прокрути вверх
           </Typography>

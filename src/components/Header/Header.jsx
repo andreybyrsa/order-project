@@ -30,7 +30,6 @@ function Header({
           <div className="header__navigation-logo">
             <Typography
               variant={TypographyVariantsTypes.Heading_logo}
-              color="#ffffff"
             >
               IT CLAN
             </Typography>
@@ -41,7 +40,6 @@ function Header({
                 <Typography
                   className="header__navigation-link"
                   key={elem.id}
-                  color="#ffffff"
                   variant={TypographyVariantsTypes.Regular_16_400_16}
                 >
                   {elem.text}
