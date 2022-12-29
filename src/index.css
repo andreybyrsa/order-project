@@ -5,19 +5,3 @@
 html, body {
   background-color: #12121C;
 }
-
-@font-face {
-  font-family: "Muller";
-  font-style: normal;
-  font-weight: 400;
-
-  src: local("Muller"), url("assets/fonts/MullerRegular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-
-  src: local("Montserrat"), url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
-}

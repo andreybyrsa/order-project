@@ -3,17 +3,30 @@
   font-weight: $fw;
   line-height: $lh;
 }
+
 .typography {
   &-regular-16-400-16 {
+    font-family: 'Muller', sans-serif;
     @include typography($fs: 16px, $fw: 400, $lh: 16px);
   }
-  &-regular-16-700-16 {
-    @include typography($fs: 16px, $fw: 700, $lh: 16px);
-  }
   &-regular-16-400-24 {
+    font-family: 'Muller', sans-serif;
     @include typography($fs: 16px, $fw: 400, $lh: 24px);
   }
-  &-logo {
+  &-bold-16-700-16 {
+    font-family: 'Muller', sans-serif;
+    @include typography($fs: 16px, $fw: 700, $lh: 16px);
+  }
+  &-bold-16-700-24 {
+    font-family: 'Muller', sans-serif;
+    @include typography($fs: 16px, $fw: 700, $lh: 24px);
+  }
+  &-heading-logo {
+    font-family: 'Montserrat', sans-serif;
     @include typography($fs: 20px, $fw: 900, $lh: 24.38px);
+  }
+  &-heading {
+    font-family: 'Montserrat', sans-serif;
+    @include typography($fs: 55px, $fw: 700, $lh: 67.05px);
   }
 }
