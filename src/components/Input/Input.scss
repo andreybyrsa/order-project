@@ -1,0 +1,47 @@
+.input {
+  color: #ffffff;
+  font-family: 'Muller', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+
+  padding-left: 27px;
+  width: 270px;
+  height: 56px;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid #ffffff;
+
+  &-wrapper {
+    width: min-content;
+  }
+
+  &-content {
+    position: relative;
+  }
+
+  &-label {
+    padding-bottom: 10px;
+  }
+
+  &-icon {
+    position: absolute;
+    top: 18px;
+    right: 27px;
+  }
+}
+
+.input::placeholder {
+  color: #343434;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.empty {
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  background-color: #12121C;
+}
