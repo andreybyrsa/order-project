@@ -5,5 +5,36 @@
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  background-color: #ffffff;
+
+  &-primary {
+    background-color: #ffffff;
+  }
+
+  &-purple-gradient-1 {
+    background: linear-gradient(88.89deg, #149FE2 3.46%, #5937E3 90.81%);
+  }
+
+  &-purple-gradient-2 {
+    background: linear-gradient(88.89deg, #F108AF 3.46%, #6630E3 90.81%);
+  }
+
+  &-yellow-gradient {
+    background: linear-gradient(88.64deg, #FCE730 18.9%, #90ED32 85.46%);
+  }
+
+  &-green {
+    background: #00FFAB;
+  }
+
+  &-orange-gradient {
+    background: linear-gradient(88.89deg, #FC590B 3.46%, #C833CD 90.81%);
+  }
+
+  &-dark-magenta-gradient {
+    background: linear-gradient(88.94deg, #F7025D 3.44%, #6A2B8B 99.09%);
+  }
+
+  &-blue-gradient {
+    background: linear-gradient(88.89deg, #149FE2 3.46%, #5937E3 90.81%);
+  }
 }
