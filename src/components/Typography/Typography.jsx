@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import TypographyVariantsTypes from './TypographyVariants.types';
+import ColorsVariantsTypes from '../../assets/colors/ColorsVariants.types';
 import './Typography.scss';
 
 function Typography({
@@ -33,15 +34,16 @@ function Typography({
 
 Typography.defaultProps = {
   className: '',
+  variant: TypographyVariantsTypes.Regular_16_400_16,
   children: null,
-  color: '#ffffff',
+  color: ColorsVariantsTypes.White,
 };
 
 Typography.propTypes = {
   className: PropTypes.string,
   variant: PropTypes.oneOf(Object.values(TypographyVariantsTypes)),
   children: PropTypes.string,
-  color: PropTypes.string,
+  color: PropTypes.oneOf(Object.values(ColorsVariantsTypes)),
 };
 
 export default Typography;

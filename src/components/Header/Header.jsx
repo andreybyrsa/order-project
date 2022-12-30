@@ -40,7 +40,6 @@ function Header({
                 <Typography
                   className="header__navigation-link"
                   key={elem.id}
-                  variant={TypographyVariantsTypes.Regular_16_400_16}
                 >
                   {elem.text}
                 </Typography>

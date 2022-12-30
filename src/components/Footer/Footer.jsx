@@ -3,7 +3,6 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import ProgressBar from '@ramonak/react-progress-bar';
 import Typography from '../Typography/Typography';
-import TypographyVariantsTypes from '../Typography/TypographyVariants.types';
 import './Footer.scss';
 
 function Footer({
@@ -20,28 +19,12 @@ function Footer({
   return (
     <div className={FooterClassName}>
       <div className="footer__content-progress">
-        <Typography
-          variant={TypographyVariantsTypes.Regular_16_400_16}
-        >
-          {`0${page}`}
-        </Typography>
-        <Typography
-          variant={TypographyVariantsTypes.Regular_16_400_16}
-        >
-          /
-        </Typography>
+        <Typography>{`0${page}`}</Typography>
+        <Typography>/</Typography>
         {completedNumber === 100 ?
-          <Typography
-            variant={TypographyVariantsTypes.Regular_16_400_16}
-          >
-            Прокрути вниз
-          </Typography>
+          <Typography>Прокрути вниз</Typography>
         :
-          <Typography
-            variant={TypographyVariantsTypes.Regular_16_400_16}
-          >
-            Прокрути вверх
-          </Typography>
+          <Typography>Прокрути вверх</Typography>
         }
       </div>
       <div className="footer__progress-bar">

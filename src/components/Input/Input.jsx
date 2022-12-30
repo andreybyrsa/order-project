@@ -4,7 +4,6 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import InputVariantsTypesTypes from './InputVariantsTypes.types';
 import Typography from '../Typography/Typography';
-import TypographyVariantsTypes from '../Typography/TypographyVariants.types';
 import { Check, X } from 'react-feather';
 import './Input.scss';
 
@@ -37,7 +36,6 @@ function Input({
       {label &&
         <Typography
           className="input-label"
-          variant={TypographyVariantsTypes.Regular_16_400_16}
         >
           {label}
         </Typography>

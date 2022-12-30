@@ -15,11 +15,12 @@
   }
 
   &__icon {
-    padding-right: 27px;
+    cursor: pointer;
+    margin-right: 27px;
   }
 
   &__icon:last-child {
-    padding-right: 0;
+    margin-right: 0;
   }
 
   &__navigation {
@@ -38,8 +39,11 @@
     }
 
     &-link {
+      cursor: pointer;
       padding-right: 44px;
+      transition: color .2s ease-out;
     }
+
     &-link:last-child {
       padding-right: 0;
     }
