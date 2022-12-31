@@ -1,0 +1,25 @@
+.intro-section {
+  &-wrapper {
+    height: 750px;
+    padding: 149px 216px 0;
+    background: right 100px top 0 no-repeat url("../../assets/images/BgIntro.png");
+    background-size: contain;
+  }
+
+  &__text {
+    padding-bottom: 78px;
+
+    &-title {
+      padding-bottom: 40px;
+    }
+
+    &-subtitle {
+      padding-bottom: 16px;
+    }
+
+    &-description {
+      width: 520px;
+      line-height: 25px;
+    }
+  }
+}
