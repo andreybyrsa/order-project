@@ -5,6 +5,7 @@ import Typography from '../Typography/Typography';
 import TypographyVariantsTypes from '../Typography/TypographyVariants.types';
 
 import './LineGroup.scss';
+import Icon from "../Icon/Icon";
 
 function LineGroup({
   className,
@@ -34,7 +35,7 @@ function LineGroup({
         }
         return (
           <div key={elem.id} className={`${CellClassName} ${CellBorderClassName}`}>
-            <img className="line-group__cell-icon" src={elem.icon} alt="cell-icon" />
+            <Icon iconPath={elem.icon} />
             <Typography
               variant={TypographyVariantsTypes.Regular_14_400_14}
             >
