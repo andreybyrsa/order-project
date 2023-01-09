@@ -1,0 +1,46 @@
+.line-group {
+  height: 43px;
+  width: min-content;
+  display: flex;
+  border: 1px solid #ffffff;
+  border-radius: 125px;
+
+  &__cell {
+    width: 141px;
+    display: flex;
+    border-right: 1px solid #ffffff;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff;
+    transition: .3s ease-out;
+
+    &-icon {
+      margin-right: 10px;
+    }
+
+    &--no-separate {
+      border-right: none;
+      border-radius: 125px;
+    }
+  }
+
+  &__cell:last-child {
+    border-right: none;
+  }
+
+  &__cell:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+.first--cell {
+  border-bottom-left-radius: 125px;
+  border-top-left-radius: 125px;
+}
+
+.last--cell {
+  border-bottom-right-radius: 125px;
+  border-top-right-radius: 125px;
+}

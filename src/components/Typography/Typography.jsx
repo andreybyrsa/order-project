@@ -36,7 +36,7 @@ Typography.defaultProps = {
   className: '',
   variant: TypographyVariantsTypes.Regular_16_400_16,
   children: null,
-  color: ColorsVariantsTypes.White,
+  color: null,
 };
 
 Typography.propTypes = {
