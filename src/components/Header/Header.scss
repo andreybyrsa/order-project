@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  background-color: #12121C;
   padding: 53px 0;
 
   &-content__wrapper {
@@ -30,6 +31,7 @@
 
     &-logo {
       padding-right: 130px;
+      color: #ffffff;
     }
 
     &-links {
@@ -40,12 +42,12 @@
 
     &-link {
       cursor: pointer;
-      padding-right: 44px;
+      margin-right: 44px;
       transition: color .2s ease-out;
     }
 
     &-link:last-child {
-      padding-right: 0;
+      margin-right: 0;
     }
   }
 }

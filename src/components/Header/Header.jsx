@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import Typography from '../Typography/Typography';
 import TypographyVariantsTypes from '../Typography/TypographyVariants.types';
+import ColorsVariantsTypes from '../../assets/colors/ColorsVariants.types';
 import { tg, be, vk } from '../../assets/images';
 import './Header.scss';
 
@@ -31,7 +32,12 @@ function Header({
             <Typography
               variant={TypographyVariantsTypes.Heading_logo}
             >
-              IT CLAN
+              BALDR.
+            </Typography>
+            <Typography
+              variant={TypographyVariantsTypes.Heading_logo}
+            >
+              AGENCY
             </Typography>
           </div>
           <div className="header__navigation-links">
@@ -39,6 +45,7 @@ function Header({
               return (
                 <Typography
                   className="header__navigation-link"
+                  color={ColorsVariantsTypes.White}
                   key={elem.id}
                 >
                   {elem.text}

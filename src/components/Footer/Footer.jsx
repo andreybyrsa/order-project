@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import ProgressBar from '@ramonak/react-progress-bar';
 import Typography from '../Typography/Typography';
+
 import './Footer.scss';
 
 function Footer({
