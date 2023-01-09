@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Typography from '../Typography/Typography';
 import TypographyVariantsTypes from '../Typography/TypographyVariants.types';
+import Icon from '../Icon/Icon';
 
 import './LineGroup.scss';
-import Icon from "../Icon/Icon";
 
 function LineGroup({
   className,
@@ -35,7 +35,7 @@ function LineGroup({
         }
         return (
           <div key={elem.id} className={`${CellClassName} ${CellBorderClassName}`}>
-            <Icon iconPath={elem.icon} />
+            <Icon className="line-group__cell-icon" iconPath={elem.icon} color={elem.color}/>
             <Typography
               variant={TypographyVariantsTypes.Regular_14_400_14}
             >
