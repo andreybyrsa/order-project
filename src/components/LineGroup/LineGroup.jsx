@@ -33,14 +33,23 @@ function LineGroup({
             CellBorderClassName = 'last--cell'
           }
         }
-        return (
-          <div key={elem.id} className={`${CellClassName} ${CellBorderClassName}`}>
+        const CellContent = (
+          <>
             <Icon className="line-group__cell-icon" iconPath={elem.icon} color={elem.color}/>
             <Typography
               variant={TypographyVariantsTypes.Regular_14_400_14}
             >
               {elem.text}
             </Typography>
+          </>
+        );
+        return (
+          <div key={elem.id} className={`${CellClassName} ${CellBorderClassName}`}>
+            {elem.to ?
+              <a className="line-group__cell-link" href={elem.to}>{CellContent}</a>
+            :
+              CellContent
+            }
           </div>
         );
       })}

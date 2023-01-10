@@ -7,6 +7,7 @@
 
   &__cell {
     width: 141px;
+    height: 41px;
     display: flex;
     border-right: 1px solid #ffffff;
     align-items: center;
@@ -17,6 +18,14 @@
 
     &-icon {
       margin-right: 5px;
+    }
+
+    &-link {
+      width: inherit;
+      height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &--no-separate {
