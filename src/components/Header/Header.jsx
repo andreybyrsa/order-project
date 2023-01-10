@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 import Typography from '../Typography/Typography';
 import TypographyVariantsTypes from '../Typography/TypographyVariants.types';
 import ColorsVariantsTypes from '../../assets/colors/ColorsVariants.types';
-import { tg, be, vk } from '../../assets/images';
+import Image from '../Image/Image';
+import ImagesSources from '../Image/ImagesSources';
+
 import './Header.scss';
 
 const links = [
@@ -55,9 +57,9 @@ function Header({
           </div>
         </div>
         <div className="header__icons">
-          <img className="header__icon" src={tg} alt="tg"/>
-          <img className="header__icon" src={be} alt="be"/>
-          <img className="header__icon" src={vk} alt="vk"/>
+          <Image wrapperClassName="header__icon" imageSrc={ImagesSources.tg} />
+          <Image wrapperClassName="header__icon" imageSrc={ImagesSources.vk} />
+          <Image wrapperClassName="header__icon" imageSrc={ImagesSources.be} />
         </div>
       </div>
     </div>
