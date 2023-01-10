@@ -57,9 +57,9 @@ function Header({
           </div>
         </div>
         <div className="header__icons">
-          <Image wrapperClassName="header__icon" imageSrc={ImagesSources.tg} />
-          <Image wrapperClassName="header__icon" imageSrc={ImagesSources.vk} />
-          <Image wrapperClassName="header__icon" imageSrc={ImagesSources.be} />
+          <Image className="header__icon" imageSrc={ImagesSources.tg} />
+          <Image className="header__icon" imageSrc={ImagesSources.vk} />
+          <Image className="header__icon" imageSrc={ImagesSources.be} />
         </div>
       </div>
     </div>

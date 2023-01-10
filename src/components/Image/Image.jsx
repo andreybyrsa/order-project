@@ -6,7 +6,6 @@ import './Image.scss';
 
 function Image({
   className,
-  wrapperClassName,
   imageSrc,
   size,
   width,
@@ -19,10 +18,6 @@ function Image({
   const ImageClassName = classNames(
     'image',
     className,
-  );
-  const ImageWrapperClassName = classNames(
-    'image-wrapper',
-    wrapperClassName,
   );
   let customStyle;
   if (width || height) {
@@ -46,11 +41,10 @@ function Image({
   }
   return (
     <ImageWrapper
-      className={ImageWrapperClassName}
+      className={ImageClassName}
       href={to}
     >
       <img
-        className={ImageClassName}
         style={{...customStyle, borderRadius: `${borderRadius}px`, objectFit: objectFit}}
         src={imageSrc}
         alt={alt}
@@ -62,7 +56,6 @@ function Image({
 
 Image.defaultProps = {
   className: '',
-  wrapperClassName: '',
   imageSrc: '',
   size: null,
   width: null,
@@ -75,7 +68,6 @@ Image.defaultProps = {
 
 Image.propTypes = {
   className: PropTypes.string,
-  wrapperClassName: PropTypes.string,
   imageSrc: PropTypes.string.isRequired,
   size: PropTypes.number,
   width: PropTypes.number,
